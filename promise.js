@@ -28,8 +28,8 @@ const promiseOutput = (emosi) =>{
             angryCounter++;
           }
           });
-          console.log(calmCounter);
-          console.log(angryCounter);
+          resolve(calmCounter);
+          resolve(angryCounter);
       })
       .catch((error) => {
         reject(error);
